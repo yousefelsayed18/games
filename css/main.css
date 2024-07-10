@@ -1,0 +1,113 @@
+/* Start Normalization */
+* {
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  box-sizing: border-box;
+}
+/* End Normalization */
+/* Start Variables */
+:root {
+  --main-color: #272b30;
+}
+/* End Variables */
+/* Start Glopal Styling */
+body {
+  font-family: "Comfortaa", cursive;
+  background-color: var(--main-color);
+  color: #fff;
+}
+/* End Glopal Styling */
+/* Start Header */
+.games .wallpaper {
+  max-height: 30vh;
+  object-fit: cover;
+}
+.games .logo {
+  max-width: 40px;
+}
+.games .navbar {
+  background-color: #3a497b !important;
+  margin-top: -30px;
+  border-radius: 20px;
+  box-shadow: 0 0 10px rgb(0 0 0 / 0.7);
+}
+.games .navbar div ul li a.active {
+  color: #09c !important;
+}
+/* End Header */
+/* Start Home */
+.games .home .item {
+  transition: all 0.5s ease;
+}
+.games .home .item:hover {
+  transform: scale(1.07);
+}
+.games .home .item .card-body img {
+  filter: grayscale(70%);
+  transition: all 0.5s ease;
+}
+.games .home .item .card-footer .badge-color {
+  background-color: #32383e;
+  filter: grayscale(100%);
+}
+.games .home .item:hover .card-body img,
+.games .home .item:hover .card-footer .badge-color {
+  filter: grayscale(0);
+}
+.games .home .text-bg-primary {
+  background-color: #4a6792 !important;
+  transition: 0.5s ease;
+}
+.games .home .item:hover .text-bg-primary {
+  background-color: #0d6efd !important;
+}
+/* End Home */
+/* Start Details Game  */
+.details {
+  background-color: #272729be;
+  min-height: 100vh;
+}
+/* End Details Game */
+/* Start Loading */
+.loading {
+  position: fixed;
+  z-index: 9999;
+  inset: 0;
+  background-color: #272b30e3;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.loader {
+  width: 100px;
+  height: 100px;
+  border-radius: 50%;
+  display: inline-block;
+  border-top: 4px solid #fff;
+  border-right: 4px solid transparent;
+  box-sizing: border-box;
+  animation: rotation 1s linear infinite;
+  position: relative;
+}
+.loader::after {
+  content: "";
+  box-sizing: border-box;
+  position: absolute;
+  left: 0;
+  top: 0;
+  width: 100px;
+  height: 100px;
+  border-radius: 50%;
+  border-left: 4px solid #ff3d00;
+  border-bottom: 4px solid transparent;
+  animation: rotation 0.5s linear infinite reverse;
+}
+@keyframes rotation {
+  0% {
+    transform: rotate(0deg);
+  }
+  100% {
+    transform: rotate(360deg);
+  }
+}
+/* End Loading */

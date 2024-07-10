@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+  <!-- Bootstrap CSS File -->
+  <link rel="stylesheet" href="css/bootstrap.min.css">
+  <!-- Normalize CSS File -->
+  <link rel="stylesheet" href="css/normalize.css">
+  <!-- Main CSS File -->
+  <link rel="stylesheet" href="css/main.css">
+</head>
+
+<body>
+
+
+
+  <section class="games" id="games">
+    <header>
+      <img src="images/wraper.png" class="w-100 wallpaper" alt="game photo">
+    </header>
+
+    <div class="container-lg px-md-5 position-sticky top-0 z-3">
+      <nav class="navbar navbar-expand-lg bg-body-tertiary overflow-hidden d-flex">
+        <div class="container">
+          <h5 class="navbar-brand mb-0 text-uppercase text-white">
+            <img src="images/logo-sm.png" class="logo" alt="site logo">
+            game reviews
+          </h5>
+          <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
+            data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false"
+            aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+          </button>
+          <div class="collapse small navbar-collapse" id="navbarSupportedContent">
+            <ul class="navbar-nav ms-auto mb-2 mb-lg-0 small">
+              <li class="nav-item">
+                <a role="button" class="nav-link text-uppercase active text-white" aria-current="page"
+                  data-category="mmorpg">mmorpg</a>
+              </li>
+              <li class="nav-item">
+                <a role="button" class="nav-link text-uppercase text-white" data-category="shooter">shooter</a>
+              </li>
+              <li class="nav-item">
+                <a role="button" class="nav-link text-uppercase text-white" data-category="sailing">sailing</a>
+              </li>
+              <li class="nav-item">
+                <a role="button" class="nav-link text-uppercase text-white" data-category="permadeath">permadeath</a>
+              </li>
+              <li class="nav-item">
+                <a role="button" class="nav-link text-uppercase text-white" data-category="superhero">superhero</a>
+              </li>
+              <li class="nav-item">
+                <a role="button" class="nav-link text-uppercase text-white" data-category="pixel">pixel</a>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </nav>
+    </div>
+
+    <main class="container my-5 home">
+      <div class="position-relative">
+        <div class="row row-cols-1 row-cols-md-2 row-cols-lg-3 row-cols-xl-4 g-4" id="gameData">
+
+        </div>
+      </div>
+    </main>
+  </section>
+
+  <section class="details d-none" id="details">
+    <div class="container">
+      <header class="hstack justify-content-between">
+        <h1 class="h3 py-4 ">Details Game</h1>
+        <button class="btn-close btn-close-white d-block" id="btnClose"></button>
+      </header>
+      <div class="row g-4" id="detailsContent">
+        <div class="col-md-4">
+          <img id="gameImage" src="" class="w-100" alt="image details">
+        </div>
+
+        <div class="col-md-8">
+          <h3>Title: <span id="gameTitle"></span></h3>
+          <p>Category:<span class="badge text-bg-info" id="gameCategory"></span></p>
+          <p>Platform:<span class="badge text-bg-info" id="gamePlatform"></span></p>
+          <p>Status:<span class="badge text-bg-info" id="gameStatus"></span></p>
+          <p class="small" id="gameDescription">
+            Lorem, ipsum dolor sit amet consectetur adipisicing elit. Facere adipisci veniam maiores dolorem aspernatur
+            fugiat nisi officiis mollitia voluptas pariatur optio tenetur officia est doloremque sunt beatae
+            dignissimos, inventore ea suscipit, repellendus vitae! Dolorem odio incidunt, distinctio laudantium
+            architecto veniam?
+          </p>
+          <a class="btn btn-outline-warning text-white" target="_blank" href="" id="gameLink">Show Game</a>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <div class="loading d-none" id="loading">
+    <div class="loader"></div>
+  </div>
+
+
+  
+
+  <script src="./js/bootstrap.bundle.min.js"></script>
+  <script src="./js/index.js" type="module"></script>
+  <script src="./js/game-details.js"></script>
+  <script src="./js/ui.js"></script>
+</body>
+
+</html>
